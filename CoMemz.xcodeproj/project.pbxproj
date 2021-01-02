@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,7 @@
 		BF36419425A00D3F00B9AD34 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36419325A00D3F00B9AD34 /* PostViewController.swift */; };
 		BF36419925A00D5C00B9AD34 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36419825A00D5C00B9AD34 /* EditProfileViewController.swift */; };
 		BF36419E25A00D6A00B9AD34 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36419D25A00D6A00B9AD34 /* SettingsViewController.swift */; };
+		BF3641C125A10ADB00B9AD34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF3641C025A10ADB00B9AD34 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		BF36419325A00D3F00B9AD34 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		BF36419825A00D5C00B9AD34 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		BF36419D25A00D6A00B9AD34 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BF3641C025A10ADB00B9AD34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -146,12 +148,15 @@
 			children = (
 				BF36412F25A0098900B9AD34 /* AppDelegate.swift */,
 				BF36413125A0098900B9AD34 /* SceneDelegate.swift */,
+				BF3641C525A10EBB00B9AD34 /* Helper */,
+				BF36416725A00ACD00B9AD34 /* View */,
 				BF36416625A00AB900B9AD34 /* Model */,
 				BF36416225A00A9D00B9AD34 /* Controller */,
 				BF36413525A0098900B9AD34 /* Main.storyboard */,
 				BF36413825A0098A00B9AD34 /* Assets.xcassets */,
 				BF36413A25A0098A00B9AD34 /* LaunchScreen.storyboard */,
 				BF36413D25A0098A00B9AD34 /* Info.plist */,
+				BF3641C025A10ADB00B9AD34 /* GoogleService-Info.plist */,
 			);
 			path = CoMemz;
 			sourceTree = "<group>";
@@ -193,7 +198,6 @@
 		BF36416625A00AB900B9AD34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BF36416725A00ACD00B9AD34 /* View */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +218,13 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		BF3641C525A10EBB00B9AD34 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		F639AD6C7675023AE0C169A5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,7 +235,6 @@
 				0FF28E5569FA57D49C4132C5 /* Pods-CoMemzTests.debug.xcconfig */,
 				9B1E287B27F87DF592106DAF /* Pods-CoMemzTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -337,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF36413C25A0098A00B9AD34 /* LaunchScreen.storyboard in Resources */,
+				BF3641C125A10ADB00B9AD34 /* GoogleService-Info.plist in Resources */,
 				BF36413925A0098A00B9AD34 /* Assets.xcassets in Resources */,
 				BF36413725A0098900B9AD34 /* Main.storyboard in Resources */,
 			);
