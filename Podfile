@@ -7,6 +7,16 @@ target 'CoMemz' do
 
   # Pods for CoMemz
 
+pod 'Appirater'
+
+  # Firebase
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
+
+
   target 'CoMemzTests' do
     inherit! :search_paths
     # Pods for testing

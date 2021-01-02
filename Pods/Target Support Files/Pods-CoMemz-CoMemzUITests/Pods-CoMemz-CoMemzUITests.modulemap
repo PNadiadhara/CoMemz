@@ -1,0 +1,6 @@
+framework module Pods_CoMemz_CoMemzUITests {
+  umbrella header "Pods-CoMemz-CoMemzUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
