@@ -126,6 +126,16 @@ class RegistrationViewController: UIViewController {
               let username = usernameField.text, !username.isEmpty else {
             return
         }
+        
+        AuthManager.shared.registerNewUser(userName: username, email: email, password: password) { registered in
+            DispatchQueue.main.async {
+                if registered {
+                    
+                } else {
+                     
+                }
+            }
+        }
     }
     
     
