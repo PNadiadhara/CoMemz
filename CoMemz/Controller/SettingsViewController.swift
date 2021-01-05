@@ -7,23 +7,83 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController {
+    
+    private let tableview: UITableView = {
+        let tableview = UITableView(frame: .zero,
+                                    style: .grouped)
+        tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return tableview
+    }()
 
+    private var data = [[SettingCellModel]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
+        view.addSubview(tableview)
+        configureModels()
+        tableview.delegate = self
+        tableview.dataSource = self
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableview.frame = view.bounds
+        
     }
-    */
+    
+    private func configureModels() {
+        let section = [
+            SettingCellModel(title: "Log Out") { [weak self] in
+                self?.didTapLogOut()
+                
+            }
+        ]
+        data.append(section)
+    }
+    
+    private func didTapLogOut() {
+        AuthManager.shared.logOut { success in
+            DispatchQueue.main.async {
+                if success {
+                    // display log in
+                    let loginVC = LoginViewController()
+                    loginVC.modalPresentationStyle = .fullScreen
+                    self.present(loginVC, animated: true) {
+                        self.navigationController?.popToRootViewController(animated: false)
+                        self.tabBarController?.selectedIndex = 0
+                    }
+                } else {
+                    
+                }
+            }
+        }
+    }
 
+}
+extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data[section].count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = data[indexPath.section][indexPath.row].title
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableview.deselectRow(at: indexPath, animated: true)
+        // this will invoke the sections handler i.e. logout set up on line 38
+        data[indexPath.section][indexPath.row].handler()
+        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return data.count
+    }
+    
+    
 }

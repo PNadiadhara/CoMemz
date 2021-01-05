@@ -38,6 +38,9 @@
 		BF36424A25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36424925A3E90B00B9AD34 /* SafeDatabaseKey.swift */; };
 		BF36424B25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36424925A3E90B00B9AD34 /* SafeDatabaseKey.swift */; };
 		BF36424C25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36424925A3E90B00B9AD34 /* SafeDatabaseKey.swift */; };
+		BF36425125A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36425025A3FC8500B9AD34 /* SettingsCellModel.swift */; };
+		BF36425225A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36425025A3FC8500B9AD34 /* SettingsCellModel.swift */; };
+		BF36425325A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36425025A3FC8500B9AD34 /* SettingsCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +98,7 @@
 		BF3641FF25A296C100B9AD34 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		BF36423F25A3E6C900B9AD34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF36424925A3E90B00B9AD34 /* SafeDatabaseKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDatabaseKey.swift; sourceTree = "<group>"; };
+		BF36425025A3FC8500B9AD34 /* SettingsCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellModel.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -215,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3641FF25A296C100B9AD34 /* UIConstants.swift */,
+				BF36425025A3FC8500B9AD34 /* SettingsCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -512,6 +517,7 @@
 				BF3641F525A2706900B9AD34 /* UIHelper.swift in Sources */,
 				BF36420025A296C100B9AD34 /* UIConstants.swift in Sources */,
 				BF36419425A00D3F00B9AD34 /* PostViewController.swift in Sources */,
+				BF36425125A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */,
 				BF36417625A00BEA00B9AD34 /* NotificationsViewController.swift in Sources */,
 				BF36418025A00CAC00B9AD34 /* LoginViewController.swift in Sources */,
 				BF36417B25A00C0200B9AD34 /* ProfileViewController.swift in Sources */,
@@ -526,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF36425225A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */,
 				BF36414725A0098A00B9AD34 /* CoMemzTests.swift in Sources */,
 				BF36424B25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */,
 			);
@@ -535,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF36425325A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */,
 				BF36415225A0098A00B9AD34 /* CoMemzUITests.swift in Sources */,
 				BF36424C25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */,
 			);
