@@ -70,7 +70,7 @@ class RegistrationViewController: UIViewController {
     
     private let registerButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Login", for: .normal)
+        button.setTitle("Register", for: .normal)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = UIConstants.cornerRadius
         button.backgroundColor = .systemGreen
