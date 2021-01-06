@@ -15,7 +15,7 @@ final class SettingsViewController: UIViewController {
         tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return tableview
     }()
-
+    
     private var data = [[SettingCellModel]]()
     
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ final class SettingsViewController: UIViewController {
         configureModels()
         tableview.delegate = self
         tableview.dataSource = self
-
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,23 +45,37 @@ final class SettingsViewController: UIViewController {
     }
     
     private func didTapLogOut() {
-        AuthManager.shared.logOut { success in
-            DispatchQueue.main.async {
-                if success {
-                    // display log in
-                    let loginVC = LoginViewController()
-                    loginVC.modalPresentationStyle = .fullScreen
-                    self.present(loginVC, animated: true) {
-                        self.navigationController?.popToRootViewController(animated: false)
-                        self.tabBarController?.selectedIndex = 0
+        let actionSheet = UIAlertController(title: "Log Out",
+                                            message: "Confirm Log Out",
+                                            preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel",
+                                            style: .cancel,
+                                            handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: {_ in
+            AuthManager.shared.logOut { success in
+                DispatchQueue.main.async {
+                    if success {
+                        // display log in
+                        let loginVC = LoginViewController()
+                        loginVC.modalPresentationStyle = .fullScreen
+                        self.present(loginVC, animated: true) {
+                            self.navigationController?.popToRootViewController(animated: false)
+                            self.tabBarController?.selectedIndex = 0
+                        }
+                    } else {
+                        fatalError("User Could Not Be Logged Out")
                     }
-                } else {
-                    
                 }
             }
-        }
+            
+            
+        }))
+        // iPad Configuration
+        actionSheet.popoverPresentationController?.sourceView = tableview
+        actionSheet.popoverPresentationController?.sourceRect = tableview.bounds
+        present(actionSheet, animated: true)
     }
-
+    
 }
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
