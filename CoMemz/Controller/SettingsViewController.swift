@@ -6,8 +6,13 @@
 //
 
 import UIKit
+import SafariServices
 
 final class SettingsViewController: UIViewController {
+
+    enum SettingsURLType {
+        case terms, privacy, help
+    }
     
     private let tableview: UITableView = {
         let tableview = UITableView(frame: .zero,
@@ -60,15 +65,15 @@ final class SettingsViewController: UIViewController {
         
         let policySection = [
             SettingCellModel(title: "Terms of Service") { [weak self] in
-                self?.didTapTOS()
+                self?.openURL(type: .terms)
                 
             },
             SettingCellModel(title: "Privacy Policy") { [weak self] in
-                self?.didTapPrivacyPolicy()
+                self?.openURL(type: .privacy)
                 
             },
             SettingCellModel(title: "Help / Feedback") { [weak self] in
-                self?.didTapHelpFeedback()
+                self?.openURL(type: .help)
                 
             }
             
@@ -111,7 +116,10 @@ final class SettingsViewController: UIViewController {
     }
     
     private func didTapEditProfile(){
-        
+        let vc = EditProfileViewController()
+        vc.title = "Edit Profile"
+        let navVC = UINavigationController(rootViewController: vc)
+        present(navVC, animated: true)
     }
     
     private func didTapInviteFriends(){
@@ -122,18 +130,23 @@ final class SettingsViewController: UIViewController {
         
     }
     
-    private func didTapTOS(){
+    private func openURL(type: SettingsURLType){
+        let urlString: String
+        switch type {
+        case .terms:
+            urlString = "https://www.facebook.com/help/instagram/termsofuse"
+        case .privacy:
+            urlString = "https://help.instagram.com/519522125107875"
+        case .help:
+            urlString = "https://help.instagram.com/"
+        }
+        guard let url = URL(string: urlString) else {
+            return
+        }
         
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
     }
-    
-    private func didTapPrivacyPolicy(){
-        
-    }
-    
-    private func didTapHelpFeedback(){
-        
-    }
-    
     
 }
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
