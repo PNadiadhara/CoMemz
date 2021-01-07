@@ -33,17 +33,51 @@ final class SettingsViewController: UIViewController {
         tableview.frame = view.bounds
         
     }
-    
+// MARK: - Settings Views Sections
     private func configureModels() {
-        let section = [
+        let logOutSection = [
             SettingCellModel(title: "Log Out") { [weak self] in
                 self?.didTapLogOut()
                 
             }
         ]
-        data.append(section)
+        
+        let userSection = [
+            SettingCellModel(title: "Edit Profile") { [weak self] in
+                self?.didTapEditProfile()
+                
+            },
+            SettingCellModel(title: "Invite Friends") { [weak self] in
+                self?.didTapInviteFriends()
+                
+            },
+            SettingCellModel(title: "Save Original Post") { [weak self] in
+                self?.didTapSaveOriginalPost()
+                
+            }
+            
+        ]
+        
+        let policySection = [
+            SettingCellModel(title: "Terms of Service") { [weak self] in
+                self?.didTapTOS()
+                
+            },
+            SettingCellModel(title: "Privacy Policy") { [weak self] in
+                self?.didTapPrivacyPolicy()
+                
+            },
+            SettingCellModel(title: "Help / Feedback") { [weak self] in
+                self?.didTapHelpFeedback()
+                
+            }
+            
+        ]
+        
+        
+        data.append(contentsOf: [userSection, policySection, logOutSection])
     }
-    
+// MARK: - Settings View Tap Functions
     private func didTapLogOut() {
         let actionSheet = UIAlertController(title: "Log Out",
                                             message: "Confirm Log Out",
@@ -76,6 +110,31 @@ final class SettingsViewController: UIViewController {
         present(actionSheet, animated: true)
     }
     
+    private func didTapEditProfile(){
+        
+    }
+    
+    private func didTapInviteFriends(){
+        
+    }
+
+    private func didTapSaveOriginalPost(){
+        
+    }
+    
+    private func didTapTOS(){
+        
+    }
+    
+    private func didTapPrivacyPolicy(){
+        
+    }
+    
+    private func didTapHelpFeedback(){
+        
+    }
+    
+    
 }
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -85,6 +144,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = data[indexPath.section][indexPath.row].title
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     

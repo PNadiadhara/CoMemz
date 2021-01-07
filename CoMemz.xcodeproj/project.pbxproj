@@ -53,6 +53,9 @@
 		BF36427125A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427025A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift */; };
 		BF36427225A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427025A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift */; };
 		BF36427325A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427025A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift */; };
+		BF36427825A7A2D700B9AD34 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427725A7A2D700B9AD34 /* UserPost.swift */; };
+		BF36427925A7A2D700B9AD34 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427725A7A2D700B9AD34 /* UserPost.swift */; };
+		BF36427A25A7A2D700B9AD34 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427725A7A2D700B9AD34 /* UserPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,7 @@
 		BF36426225A6883E00B9AD34 /* FeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		BF36426925A6885F00B9AD34 /* FeedPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostActionTableViewCell.swift; sourceTree = "<group>"; };
 		BF36427025A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		BF36427725A7A2D700B9AD34 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -236,6 +240,7 @@
 			children = (
 				BF3641FF25A296C100B9AD34 /* UIConstants.swift */,
 				BF36425025A3FC8500B9AD34 /* SettingsCellModel.swift */,
+				BF36427725A7A2D700B9AD34 /* UserPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -548,6 +553,7 @@
 				BF36420025A296C100B9AD34 /* UIConstants.swift in Sources */,
 				BF36419425A00D3F00B9AD34 /* PostViewController.swift in Sources */,
 				BF36425125A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */,
+				BF36427825A7A2D700B9AD34 /* UserPost.swift in Sources */,
 				BF36427125A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift in Sources */,
 				BF36417625A00BEA00B9AD34 /* NotificationsViewController.swift in Sources */,
 				BF36418025A00CAC00B9AD34 /* LoginViewController.swift in Sources */,
@@ -570,6 +576,7 @@
 				BF36426B25A6885F00B9AD34 /* FeedPostActionTableViewCell.swift in Sources */,
 				BF36427225A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift in Sources */,
 				BF36424B25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */,
+				BF36427925A7A2D700B9AD34 /* UserPost.swift in Sources */,
 				BF36425A25A6864400B9AD34 /* FeedPostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +591,7 @@
 				BF36426C25A6885F00B9AD34 /* FeedPostActionTableViewCell.swift in Sources */,
 				BF36427325A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift in Sources */,
 				BF36424C25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */,
+				BF36427A25A7A2D700B9AD34 /* UserPost.swift in Sources */,
 				BF36425B25A6864400B9AD34 /* FeedPostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
