@@ -56,6 +56,10 @@
 		BF36427825A7A2D700B9AD34 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427725A7A2D700B9AD34 /* UserPost.swift */; };
 		BF36427925A7A2D700B9AD34 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427725A7A2D700B9AD34 /* UserPost.swift */; };
 		BF36427A25A7A2D700B9AD34 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427725A7A2D700B9AD34 /* UserPost.swift */; };
+		BF36427F25A9368300B9AD34 /* EditProfileCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */; };
+		BF36428025A9368300B9AD34 /* EditProfileCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */; };
+		BF36428125A9368300B9AD34 /* EditProfileCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */; };
+		BF36428A25A93B0500B9AD34 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36428925A93B0500B9AD34 /* FormTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +123,8 @@
 		BF36426925A6885F00B9AD34 /* FeedPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostActionTableViewCell.swift; sourceTree = "<group>"; };
 		BF36427025A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		BF36427725A7A2D700B9AD34 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
+		BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileCellModel.swift; sourceTree = "<group>"; };
+		BF36428925A93B0500B9AD34 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -239,7 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3641FF25A296C100B9AD34 /* UIConstants.swift */,
-				BF36425025A3FC8500B9AD34 /* SettingsCellModel.swift */,
+				BF36428525A9368E00B9AD34 /* Cell Models */,
 				BF36427725A7A2D700B9AD34 /* UserPost.swift */,
 			);
 			path = Model;
@@ -281,8 +287,18 @@
 				BF36426225A6883E00B9AD34 /* FeedPostHeaderTableViewCell.swift */,
 				BF36426925A6885F00B9AD34 /* FeedPostActionTableViewCell.swift */,
 				BF36427025A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift */,
+				BF36428925A93B0500B9AD34 /* FormTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		BF36428525A9368E00B9AD34 /* Cell Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF36425025A3FC8500B9AD34 /* SettingsCellModel.swift */,
+				BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */,
+			);
+			path = "Cell Models";
 			sourceTree = "<group>";
 		};
 		F639AD6C7675023AE0C169A5 /* Pods */ = {
@@ -548,6 +564,7 @@
 				BF36417125A00BD100B9AD34 /* CameraViewController.swift in Sources */,
 				BF36424A25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */,
 				BF36413425A0098900B9AD34 /* HomeViewController.swift in Sources */,
+				BF36428A25A93B0500B9AD34 /* FormTableViewCell.swift in Sources */,
 				BF36418525A00CC400B9AD34 /* RegistrationViewController.swift in Sources */,
 				BF3641F525A2706900B9AD34 /* UIHelper.swift in Sources */,
 				BF36420025A296C100B9AD34 /* UIConstants.swift in Sources */,
@@ -559,6 +576,7 @@
 				BF36418025A00CAC00B9AD34 /* LoginViewController.swift in Sources */,
 				BF36417B25A00C0200B9AD34 /* ProfileViewController.swift in Sources */,
 				BF36413025A0098900B9AD34 /* AppDelegate.swift in Sources */,
+				BF36427F25A9368300B9AD34 /* EditProfileCellModel.swift in Sources */,
 				BF3641D425A110F600B9AD34 /* StorageManager.swift in Sources */,
 				BF36413225A0098900B9AD34 /* SceneDelegate.swift in Sources */,
 				BF36419E25A00D6A00B9AD34 /* SettingsViewController.swift in Sources */,
@@ -571,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF36425225A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */,
+				BF36428025A9368300B9AD34 /* EditProfileCellModel.swift in Sources */,
 				BF36426425A6883E00B9AD34 /* FeedPostHeaderTableViewCell.swift in Sources */,
 				BF36414725A0098A00B9AD34 /* CoMemzTests.swift in Sources */,
 				BF36426B25A6885F00B9AD34 /* FeedPostActionTableViewCell.swift in Sources */,
@@ -586,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF36425325A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */,
+				BF36428125A9368300B9AD34 /* EditProfileCellModel.swift in Sources */,
 				BF36426525A6883E00B9AD34 /* FeedPostHeaderTableViewCell.swift in Sources */,
 				BF36415225A0098A00B9AD34 /* CoMemzUITests.swift in Sources */,
 				BF36426C25A6885F00B9AD34 /* FeedPostActionTableViewCell.swift in Sources */,

@@ -11,13 +11,16 @@ class EditProfileViewController: UIViewController {
 
     private let tableView: UITableView = {
         let tableview = UITableView()
-        tableview.register(UITableViewCell.self,
-                           forCellReuseIdentifier: "cell")
+        tableview.register(FormTableViewCell.self,
+                           forCellReuseIdentifier: FormTableViewCell.identifier)
         return tableview
     }()
     
+    private var models = [[EditProfileCellModel]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureModels()
         tableView.tableHeaderView = createTableHeaderView()
         tableView.dataSource = self
         
@@ -94,22 +97,52 @@ class EditProfileViewController: UIViewController {
         profilePhotoButton.layer.borderColor = UIColor.secondarySystemBackground.cgColor
         return header
     }
+    
+    private func configureModels() {
+        let section1Labels = ["Name", "UserName", "Bio"]
+        var section1 = [EditProfileCellModel]()
+        for label in section1Labels {
+            let model = EditProfileCellModel(label: label,
+                                             placeholder: "Enter \(label)",
+                                             value: nil)
+            section1.append(model)
+        }
+        
+        let section2Labels = ["Email", "Phone", "Gender"]
+        var section2 = [EditProfileCellModel]()
+        for label in section2Labels {
+            let model = EditProfileCellModel(label: label,
+                                             placeholder: "Enter \(label)",
+                                             value: nil)
+            section2.append(model)
+        }
+        
+        models.append(contentsOf: [section1, section2])
+    }
 
 }
 
 extension EditProfileViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return models.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return models[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "place holder"
+        let model = models[indexPath.section][indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: FormTableViewCell.identifier, for: indexPath) as! FormTableViewCell
+        cell.configure(with: model)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard section == 1 else {
+            return nil
+        }
+        return "Private Informaiton"
     }
     
     
