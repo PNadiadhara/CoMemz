@@ -60,6 +60,9 @@
 		BF36428025A9368300B9AD34 /* EditProfileCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */; };
 		BF36428125A9368300B9AD34 /* EditProfileCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */; };
 		BF36428A25A93B0500B9AD34 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36428925A93B0500B9AD34 /* FormTableViewCell.swift */; };
+		BF36429025ABA89F00B9AD34 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36428F25ABA89F00B9AD34 /* PhotoCollectionViewCell.swift */; };
+		BF36429525ABA93000B9AD34 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36429425ABA93000B9AD34 /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		BF36429D25ABA96C00B9AD34 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36429C25ABA96C00B9AD34 /* ProfileTabsCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,9 @@
 		BF36427725A7A2D700B9AD34 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileCellModel.swift; sourceTree = "<group>"; };
 		BF36428925A93B0500B9AD34 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		BF36428F25ABA89F00B9AD34 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF36429425ABA93000B9AD34 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		BF36429C25ABA96C00B9AD34 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -254,6 +260,7 @@
 		BF36416725A00ACD00B9AD34 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF36428E25ABA86E00B9AD34 /* CollectionView Headers */,
 				BF36425725A6860600B9AD34 /* Cells */,
 			);
 			path = View;
@@ -288,6 +295,7 @@
 				BF36426925A6885F00B9AD34 /* FeedPostActionTableViewCell.swift */,
 				BF36427025A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift */,
 				BF36428925A93B0500B9AD34 /* FormTableViewCell.swift */,
+				BF36428F25ABA89F00B9AD34 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -299,6 +307,15 @@
 				BF36427E25A9368300B9AD34 /* EditProfileCellModel.swift */,
 			);
 			path = "Cell Models";
+			sourceTree = "<group>";
+		};
+		BF36428E25ABA86E00B9AD34 /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BF36429425ABA93000B9AD34 /* ProfileInfoHeaderCollectionReusableView.swift */,
+				BF36429C25ABA96C00B9AD34 /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
 			sourceTree = "<group>";
 		};
 		F639AD6C7675023AE0C169A5 /* Pods */ = {
@@ -566,14 +583,17 @@
 				BF36413425A0098900B9AD34 /* HomeViewController.swift in Sources */,
 				BF36428A25A93B0500B9AD34 /* FormTableViewCell.swift in Sources */,
 				BF36418525A00CC400B9AD34 /* RegistrationViewController.swift in Sources */,
+				BF36429D25ABA96C00B9AD34 /* ProfileTabsCollectionReusableView.swift in Sources */,
 				BF3641F525A2706900B9AD34 /* UIHelper.swift in Sources */,
 				BF36420025A296C100B9AD34 /* UIConstants.swift in Sources */,
 				BF36419425A00D3F00B9AD34 /* PostViewController.swift in Sources */,
+				BF36429025ABA89F00B9AD34 /* PhotoCollectionViewCell.swift in Sources */,
 				BF36425125A3FC8500B9AD34 /* SettingsCellModel.swift in Sources */,
 				BF36427825A7A2D700B9AD34 /* UserPost.swift in Sources */,
 				BF36427125A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift in Sources */,
 				BF36417625A00BEA00B9AD34 /* NotificationsViewController.swift in Sources */,
 				BF36418025A00CAC00B9AD34 /* LoginViewController.swift in Sources */,
+				BF36429525ABA93000B9AD34 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				BF36417B25A00C0200B9AD34 /* ProfileViewController.swift in Sources */,
 				BF36413025A0098900B9AD34 /* AppDelegate.swift in Sources */,
 				BF36427F25A9368300B9AD34 /* EditProfileCellModel.swift in Sources */,
