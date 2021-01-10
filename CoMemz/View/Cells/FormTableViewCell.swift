@@ -27,6 +27,7 @@ class FormTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         clipsToBounds = true
+        selectionStyle = .none
         contentView.addSubview(formLabel)
         contentView.addSubview(field)
         field.delegate = self
@@ -64,6 +65,7 @@ class FormTableViewCell: UITableViewCell {
 
 extension FormTableViewCell: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         return true
     }
 }
