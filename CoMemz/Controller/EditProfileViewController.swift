@@ -42,13 +42,15 @@ class EditProfileViewController: UIViewController {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
     }
+
+    //MARK: - Functions
     
     @objc private func didTapSave(){
-        
+        dismiss(animated: true, completion: nil)
     }
     
     @objc private func didTapCancel(){
-        
+        dismiss(animated: true, completion: nil)
     }
     
     @objc private func didTapChangeProfilePicture(){
@@ -121,7 +123,7 @@ class EditProfileViewController: UIViewController {
     }
 
 }
-
+//MARK: - TableView Datasource
 extension EditProfileViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return models.count
@@ -135,6 +137,7 @@ extension EditProfileViewController: UITableViewDataSource {
         let model = models[indexPath.section][indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: FormTableViewCell.identifier, for: indexPath) as! FormTableViewCell
         cell.configure(with: model)
+        cell.delegate = self
         return cell
     }
     
@@ -144,6 +147,16 @@ extension EditProfileViewController: UITableViewDataSource {
         }
         return "Private Informaiton"
     }
+    
+    
+}
+
+extension EditProfileViewController: FormTableViewCellDelegate {
+    func formTableViewCell(_ cell: FormTableViewCell, didUpdateField updateModel: EditProfileCellModel?) {
+        print(updateModel?.value ?? "nil")
+    }
+        
+    
     
     
 }
