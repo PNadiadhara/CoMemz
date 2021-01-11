@@ -8,6 +8,7 @@ target 'CoMemz' do
   # Pods for CoMemz
 
 pod 'Appirater'
+pod 'SDWebImage'
 
   # Firebase
 pod 'Firebase/Core'

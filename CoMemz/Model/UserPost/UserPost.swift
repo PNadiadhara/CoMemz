@@ -13,4 +13,14 @@ public enum UserPostType {
 
 public struct UserPost {
     let postType: UserPostType
+    let identifier: String
+    let thumbnailImage : URL
+    let caption: String?
+    let likeCount: [PostLikes]
+    let comments: [PostComment]
+    let createdDate: Data
+    
 }
+
+
+
