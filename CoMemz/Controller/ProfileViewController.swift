@@ -19,11 +19,14 @@ class ProfileViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
+        layout.minimumLineSpacing = 1
+        layout.minimumInteritemSpacing = 1
         layout.sectionInset = UIEdgeInsets(top: UIConstants.collectionViewTopInset,
                                            left: UIConstants.collectionViewLeftInset,
                                            bottom: UIConstants.collectionViewBottomInset,
                                            right: UIConstants.collectionViewRightInset)
-        layout.itemSize = CGSize(width: view.width/3, height: view.width/3)
+        let size = (view.width - 4)/3
+        layout.itemSize = CGSize(width: size, height: size)
         collectionView = UICollectionView(frame: .zero,
                                           collectionViewLayout: layout)
         
