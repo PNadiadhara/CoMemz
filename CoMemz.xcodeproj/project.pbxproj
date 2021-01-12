@@ -66,6 +66,7 @@
 		BF68D53C25ACFF43000BC3D6 /* PostLikes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D53B25ACFF43000BC3D6 /* PostLikes.swift */; };
 		BF68D54425ACFF52000BC3D6 /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D54325ACFF52000BC3D6 /* PostComment.swift */; };
 		BF68D54925ACFFD5000BC3D6 /* CommentLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D54825ACFFD5000BC3D6 /* CommentLike.swift */; };
+		BF68D56B25AD2340000BC3D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D56A25AD2340000BC3D6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		BF68D53B25ACFF43000BC3D6 /* PostLikes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLikes.swift; sourceTree = "<group>"; };
 		BF68D54325ACFF52000BC3D6 /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
 		BF68D54825ACFFD5000BC3D6 /* CommentLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentLike.swift; sourceTree = "<group>"; };
+		BF68D56A25AD2340000BC3D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -259,6 +261,7 @@
 				BF3641FF25A296C100B9AD34 /* UIConstants.swift */,
 				BF36428525A9368E00B9AD34 /* Cell Models */,
 				BF68D53A25ACFF2B000BC3D6 /* UserPost */,
+				BF68D56A25AD2340000BC3D6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				BF36419E25A00D6A00B9AD34 /* SettingsViewController.swift in Sources */,
 				BF68D54425ACFF52000BC3D6 /* PostComment.swift in Sources */,
 				BF36425925A6864400B9AD34 /* FeedPostTableViewCell.swift in Sources */,
+				BF68D56B25AD2340000BC3D6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

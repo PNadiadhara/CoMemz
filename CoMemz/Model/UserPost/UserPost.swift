@@ -19,6 +19,7 @@ public struct UserPost {
     let likeCount: [PostLikes]
     let comments: [PostComment]
     let createdDate: Data
+    let taggedUsers: [String]
     
 }
 
