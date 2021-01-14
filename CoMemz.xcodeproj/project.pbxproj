@@ -67,6 +67,7 @@
 		BF68D54425ACFF52000BC3D6 /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D54325ACFF52000BC3D6 /* PostComment.swift */; };
 		BF68D54925ACFFD5000BC3D6 /* CommentLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D54825ACFFD5000BC3D6 /* CommentLike.swift */; };
 		BF68D56B25AD2340000BC3D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D56A25AD2340000BC3D6 /* User.swift */; };
+		BFBD62CD25B0F54F0021CAAC /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		BF68D54325ACFF52000BC3D6 /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
 		BF68D54825ACFFD5000BC3D6 /* CommentLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentLike.swift; sourceTree = "<group>"; };
 		BF68D56A25AD2340000BC3D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -251,6 +253,7 @@
 				BF36419825A00D5C00B9AD34 /* EditProfileViewController.swift */,
 				BF36419D25A00D6A00B9AD34 /* SettingsViewController.swift */,
 				BF36418925A00CCC00B9AD34 /* Login */,
+				BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBD62CD25B0F54F0021CAAC /* ListViewController.swift in Sources */,
 				BF36419925A00D5C00B9AD34 /* EditProfileViewController.swift in Sources */,
 				BF36426A25A6885F00B9AD34 /* FeedPostActionTableViewCell.swift in Sources */,
 				BF36426325A6883E00B9AD34 /* FeedPostHeaderTableViewCell.swift in Sources */,
