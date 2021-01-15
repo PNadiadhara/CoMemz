@@ -12,7 +12,7 @@ protocol ProfileTabsCollectionReusableViewDelegate: AnyObject {
     func didTapTaggedButton()
 }
 struct Constants {
-    static let padding: CGFloat = 4
+    static let padding: CGFloat = 8
 }
 class ProfileTabsCollectionReusableView: UICollectionReusableView {
     static let identifier = "ProfileTabsCollectionReusableView"

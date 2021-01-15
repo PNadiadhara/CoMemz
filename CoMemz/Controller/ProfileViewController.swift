@@ -115,7 +115,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
                                                                          withReuseIdentifier: ProfileTabsCollectionReusableView.identifier,
                                                                          for: indexPath) as! ProfileTabsCollectionReusableView
             
-            
+            tabControlHeader.delegate = self
             return tabControlHeader
         }
         
@@ -131,7 +131,8 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
             return CGSize(width: collectionView.width, height: collectionView.height/3)
         }
         
-        return CGSize(width: collectionView.width, height: 65)
+        // section tab size
+        return CGSize(width: collectionView.width, height: 50)
     }
 }
 //MARK: - Custom Delegate ProfileViewController
@@ -159,6 +160,18 @@ extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate
         let vc = EditProfileViewController()
         vc.title = "Edit Profile"
         present(UINavigationController(rootViewController: vc), animated: true)
+    }
+    
+    
+}
+
+extension ProfileViewController : ProfileTabsCollectionReusableViewDelegate {
+    func didTapGridButton() {
+        // reload cv
+    }
+    
+    func didTapTaggedButton() {
+        // reload cv
     }
     
     
