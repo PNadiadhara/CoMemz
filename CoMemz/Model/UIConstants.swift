@@ -17,4 +17,5 @@ import UIKit
         static let collectionViewBottomInset: CGFloat = 0
         static let collectionViewLeftInset: CGFloat = 1
         static let collectionViewRightInset: CGFloat = 1
+        
     }
