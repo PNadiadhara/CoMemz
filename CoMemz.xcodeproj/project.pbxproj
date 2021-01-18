@@ -68,6 +68,7 @@
 		BF68D54925ACFFD5000BC3D6 /* CommentLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D54825ACFFD5000BC3D6 /* CommentLike.swift */; };
 		BF68D56B25AD2340000BC3D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D56A25AD2340000BC3D6 /* User.swift */; };
 		BFBD62CD25B0F54F0021CAAC /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */; };
+		BFC7949725B60B32000D660F /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7949625B60B32000D660F /* UserFollowTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		BF68D54825ACFFD5000BC3D6 /* CommentLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentLike.swift; sourceTree = "<group>"; };
 		BF68D56A25AD2340000BC3D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		BFC7949625B60B32000D660F /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -308,6 +310,7 @@
 				BF36427025A6888B00B9AD34 /* FeedPostGeneralTableViewCell.swift */,
 				BF36428925A93B0500B9AD34 /* FormTableViewCell.swift */,
 				BF36428F25ABA89F00B9AD34 /* PhotoCollectionViewCell.swift */,
+				BFC7949625B60B32000D660F /* UserFollowTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				BF36427F25A9368300B9AD34 /* EditProfileCellModel.swift in Sources */,
 				BF3641D425A110F600B9AD34 /* StorageManager.swift in Sources */,
 				BF36413225A0098900B9AD34 /* SceneDelegate.swift in Sources */,
+				BFC7949725B60B32000D660F /* UserFollowTableViewCell.swift in Sources */,
 				BF36419E25A00D6A00B9AD34 /* SettingsViewController.swift in Sources */,
 				BF68D54425ACFF52000BC3D6 /* PostComment.swift in Sources */,
 				BF36425925A6864400B9AD34 /* FeedPostTableViewCell.swift in Sources */,
