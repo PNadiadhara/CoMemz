@@ -70,6 +70,8 @@
 		BFBD62CD25B0F54F0021CAAC /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */; };
 		BFC7949725B60B32000D660F /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7949625B60B32000D660F /* UserFollowTableViewCell.swift */; };
 		BFC7949C25B6545F000D660F /* NoNotificationsUIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7949B25B6545F000D660F /* NoNotificationsUIVIew.swift */; };
+		BFC794A125BA26CC000D660F /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC794A025BA26CC000D660F /* NotificationFollowEventTableViewCell.swift */; };
+		BFC794A625BA26F6000D660F /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC794A525BA26F6000D660F /* NotificationLikeEventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +147,8 @@
 		BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		BFC7949625B60B32000D660F /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
 		BFC7949B25B6545F000D660F /* NoNotificationsUIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsUIVIew.swift; sourceTree = "<group>"; };
+		BFC794A025BA26CC000D660F /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		BFC794A525BA26F6000D660F /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -314,6 +318,7 @@
 				BF36428925A93B0500B9AD34 /* FormTableViewCell.swift */,
 				BF36428F25ABA89F00B9AD34 /* PhotoCollectionViewCell.swift */,
 				BFC7949625B60B32000D660F /* UserFollowTableViewCell.swift */,
+				BFC794AA25BA2706000D660F /* Notifications */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -345,6 +350,15 @@
 				BF68D54825ACFFD5000BC3D6 /* CommentLike.swift */,
 			);
 			path = UserPost;
+			sourceTree = "<group>";
+		};
+		BFC794AA25BA2706000D660F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				BFC794A025BA26CC000D660F /* NotificationFollowEventTableViewCell.swift */,
+				BFC794A525BA26F6000D660F /* NotificationLikeEventTableViewCell.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		F639AD6C7675023AE0C169A5 /* Pods */ = {
@@ -605,11 +619,13 @@
 				BF36419925A00D5C00B9AD34 /* EditProfileViewController.swift in Sources */,
 				BF36426A25A6885F00B9AD34 /* FeedPostActionTableViewCell.swift in Sources */,
 				BF36426325A6883E00B9AD34 /* FeedPostHeaderTableViewCell.swift in Sources */,
+				BFC794A625BA26F6000D660F /* NotificationLikeEventTableViewCell.swift in Sources */,
 				BF3641CF25A110A300B9AD34 /* AuthManager.swift in Sources */,
 				BF68D54925ACFFD5000BC3D6 /* CommentLike.swift in Sources */,
 				BF36416C25A00BB200B9AD34 /* ExploreViewController.swift in Sources */,
 				BF3641C725A10F0C00B9AD34 /* DatabaseManager.swift in Sources */,
 				BF36417125A00BD100B9AD34 /* CameraViewController.swift in Sources */,
+				BFC794A125BA26CC000D660F /* NotificationFollowEventTableViewCell.swift in Sources */,
 				BF36424A25A3E90B00B9AD34 /* SafeDatabaseKey.swift in Sources */,
 				BF36413425A0098900B9AD34 /* HomeViewController.swift in Sources */,
 				BF36428A25A93B0500B9AD34 /* FormTableViewCell.swift in Sources */,
