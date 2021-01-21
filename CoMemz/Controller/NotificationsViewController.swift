@@ -15,10 +15,12 @@ class NotificationsViewController: UIViewController {
                            forCellReuseIdentifier: "cell")
         return tableView
     }()
+    
+    private let noNotificaiontsView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Notifications"
+        navigationItem.title = "Notifications"
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         tableView.delegate = self

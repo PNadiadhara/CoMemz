@@ -77,7 +77,7 @@ extension ListViewController: UserFollowTableViewCellDelegate {
             // update db to unfollow
         break
         case .not_following:
-            // update dv to follow
+            // update db to follow
         break
         }
     }

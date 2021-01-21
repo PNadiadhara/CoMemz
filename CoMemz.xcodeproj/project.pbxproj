@@ -69,6 +69,7 @@
 		BF68D56B25AD2340000BC3D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68D56A25AD2340000BC3D6 /* User.swift */; };
 		BFBD62CD25B0F54F0021CAAC /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */; };
 		BFC7949725B60B32000D660F /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7949625B60B32000D660F /* UserFollowTableViewCell.swift */; };
+		BFC7949C25B6545F000D660F /* NoNotificationsUIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7949B25B6545F000D660F /* NoNotificationsUIVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		BF68D56A25AD2340000BC3D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BFBD62CC25B0F54F0021CAAC /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		BFC7949625B60B32000D660F /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		BFC7949B25B6545F000D660F /* NoNotificationsUIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsUIVIew.swift; sourceTree = "<group>"; };
 		DE957AA86F538227D9F2D934 /* Pods-CoMemz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMemz.debug.xcconfig"; path = "Target Support Files/Pods-CoMemz/Pods-CoMemz.debug.xcconfig"; sourceTree = "<group>"; };
 		EFA4307768B20ABD9D858464 /* Pods_CoMemzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMemzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -276,6 +278,7 @@
 			children = (
 				BF36428E25ABA86E00B9AD34 /* CollectionView Headers */,
 				BF36425725A6860600B9AD34 /* Cells */,
+				BFC7949B25B6545F000D660F /* NoNotificationsUIVIew.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				BF36418025A00CAC00B9AD34 /* LoginViewController.swift in Sources */,
 				BF36429525ABA93000B9AD34 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				BF36417B25A00C0200B9AD34 /* ProfileViewController.swift in Sources */,
+				BFC7949C25B6545F000D660F /* NoNotificationsUIVIew.swift in Sources */,
 				BF36413025A0098900B9AD34 /* AppDelegate.swift in Sources */,
 				BF36427F25A9368300B9AD34 /* EditProfileCellModel.swift in Sources */,
 				BF3641D425A110F600B9AD34 /* StorageManager.swift in Sources */,
